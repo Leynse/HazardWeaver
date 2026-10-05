@@ -4,7 +4,7 @@
 
 Official code for [*HazardWeaver: Scientific Route Selection for Hazard Analysis Agents*](https://arxiv.org/abs/2610.03591) (arXiv:[2610.03591](https://arxiv.org/abs/2610.03591)).
 
-HazardWeaver is a framework for selecting and revising model-backed scientific workflows as an analysis evolves. Given a single- or multi-hazard task and the current analysis state, it grounds route applicability in scientific evidence, composes heterogeneous models and tools through typed capability relations, and selects, executes, and revises eligible routes as evidence and execution conditions change. This repository provides the HazardWeaver implementation, the sealed **141**-instance Hazard Weaver Benchmark (HWB), the unified Decision-Constrained Accuracy (DCA) evaluator, and scripts for reproducing the paper’s results.
+HazardWeaver is a framework for selecting and revising model-backed scientific workflows as an analysis evolves. Given a single- or multi-hazard task and the current analysis state, it grounds route applicability in scientific evidence, composes heterogeneous models and tools through typed capability relations, and selects, executes, and revises eligible routes as evidence and execution conditions change. This repository provides the HazardWeaver implementation, the sealed 141-instance Hazard Weaver Benchmark (HWB), the unified Decision-Constrained Accuracy (DCA) evaluator, and scripts for reproducing the paper’s results.
 
 ![HazardWeaver system overview](paper_artifacts/figures/HW_framework.png)
 
@@ -52,7 +52,7 @@ pytest tests -q
 
 **HazardWeaver (HWA)** is the headline agent: one LLM policy selects among HCG-backed capabilities under dual scientific/capability gates, with the same tool surface as the paper baselines. This repo ships the evaluation stack (HKC + HCG runtime hooks + HWB graders), **adapted planning baselines** and **shared-tool controls** from Tables 1–2, and **released aggregates** aligned with the paper tables.
 
-**Data and models (not fully vendored).** Tasks are grounded in public hazard products—WildfireSpreadTS, FloodCastBench, LHASA, SeisBench, TCBench, NOAA CPC, ExtremeWeatherBench, USGS post-fire and ground-failure layers, SFINCS, NOAA Storm Events, and related catalogs. Full rasters, HCG scientific run trees, and **Llama / vLLM weights** are downloaded or mounted separately; see [docs/benchmark.md](docs/benchmark.md) and `scripts/download_external_data.py`. CPU **fixture taskpacks** support smoke tests without multi-terabyte assets.
+**Data and models.** Tasks are grounded in public hazard products—WildfireSpreadTS, FloodCastBench, LHASA, SeisBench, TCBench, NOAA CPC, ExtremeWeatherBench, USGS post-fire and ground-failure layers, SFINCS, NOAA Storm Events, and related catalogs. Full rasters, HCG scientific run trees, and **Llama / vLLM weights** are downloaded or mounted separately; see [docs/benchmark.md](docs/benchmark.md) and `scripts/download_external_data.py`. CPU **fixture taskpacks** support smoke tests without multi-terabyte assets.
 
 **Paper artifacts.** Table and figure sources, headline JSON, and per-instance trajectory summaries live under `paper_artifacts/` and `released_results/`. Re-scoring and optional agent re-runs: [docs/reproduction.md](docs/reproduction.md).
 
