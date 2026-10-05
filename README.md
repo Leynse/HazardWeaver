@@ -2,8 +2,9 @@
 
 **State-dependent scientific route selection for hazard-analysis agents.**
 
-HazardWeaver is a framework for selecting and revising model-backed scientific workflows as an analysis evolves. Given a single- or multi-hazard task and the current analysis state, it grounds route applicability in scientific evidence, composes heterogeneous models and tools through typed capability relations, and selects, executes, and revises eligible routes as evidence and execution conditions change. This repository provides the HazardWeaver implementation, the sealed 141-instance Hazard Weaver Benchmark (HWB), the unified Decision-Constrained Accuracy (DCA) evaluator, and scripts for reproducing the paper’s results.
+Official code for [*HazardWeaver: Scientific Route Selection for Hazard Analysis Agents*](https://arxiv.org/abs/2610.03591) (arXiv:[2610.03591](https://arxiv.org/abs/2610.03591)).
 
+HazardWeaver is a framework for selecting and revising model-backed scientific workflows as an analysis evolves. Given a single- or multi-hazard task and the current analysis state, it grounds route applicability in scientific evidence, composes heterogeneous models and tools through typed capability relations, and selects, executes, and revises eligible routes as evidence and execution conditions change. This repository provides the HazardWeaver implementation, the sealed **141**-instance Hazard Weaver Benchmark (HWB), the unified Decision-Constrained Accuracy (DCA) evaluator, and scripts for reproducing the paper’s results.
 
 ![HazardWeaver system overview](paper_artifacts/figures/HW_framework.png)
 
@@ -59,6 +60,22 @@ pytest tests -q
 
 ![Global coverage of HWB](paper_artifacts/figures/global_coverage_map.png)
 
+## Citation
+
+If you use HazardWeaver or HWB, please cite:
+
+```bibtex
+@article{zhu2026hazardweaver,
+  title   = {HazardWeaver: Scientific Route Selection for Hazard Analysis Agents},
+  author  = {Zhu, Wangshu and Cheng, Xueqi and Wu, Liang and Dong, Yushun},
+  journal = {arXiv preprint arXiv:2610.03591},
+  year    = {2026},
+  url     = {https://arxiv.org/abs/2610.03591}
+}
+```
+
+See also [CITATION.cff](CITATION.cff) for machine-readable metadata.
+
 ## License
 
-MIT ([LICENSE](LICENSE)). For anonymous review, `configs/release.yaml` uses a placeholder copyright; use `configs/release_lab.yaml` when publishing under your lab name.
+MIT ([LICENSE](LICENSE)). Copyright (c) 2026 Wangshu Zhu, Xueqi Cheng, Liang Wu, and Yushun Dong.

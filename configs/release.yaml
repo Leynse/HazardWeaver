@@ -1,8 +1,13 @@
-# Default release profile (anonymous ICLR review)
-profile: anonymous
-strict_identity_scan: true
-license_holder: "Anonymous Authors"
-package_authors: "Anonymous Authors"
+# Lab / arXiv public release (https://github.com/LabRAI/HazardWeaver)
+profile: lab
+strict_identity_scan: false
+license_holder: "Wangshu Zhu, Xueqi Cheng, Liang Wu, and Yushun Dong"
+package_authors: "Wangshu Zhu, Xueqi Cheng, Liang Wu, Yushun Dong"
+paper:
+  title: "HazardWeaver: Scientific Route Selection for Hazard Analysis Agents"
+  arxiv_id: "2610.03591"
+  arxiv_url: "https://arxiv.org/abs/2610.03591"
+  repository: "https://github.com/LabRAI/HazardWeaver"
 benchmark:
   headline_n: 141
   stratum_m_n: 96

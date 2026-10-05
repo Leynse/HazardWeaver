@@ -8,7 +8,12 @@ version = "1.0.0"
 description = "HazardWeaver — route selection for multi-hazard analysis agents (HWB benchmark release)"
 readme = "README.md"
 requires-python = ">=3.10"
-authors = [{ name = "Anonymous Authors" }]
+authors = [
+    { name = "Wangshu Zhu" },
+    { name = "Xueqi Cheng" },
+    { name = "Liang Wu" },
+    { name = "Yushun Dong" },
+]
 license = { text = "MIT" }
 dependencies = [
     "pydantic>=2.0",

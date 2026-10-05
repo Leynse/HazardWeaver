@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+title: "HazardWeaver: Scientific Route Selection for Hazard Analysis Agents"
+message: "If you use this software, please cite the paper."
+type: software
+authors:
+  - family-names: Zhu
+    given-names: Wangshu
+  - family-names: Cheng
+    given-names: Xueqi
+  - family-names: Wu
+    given-names: Liang
+  - family-names: Dong
+    given-names: Yushun
+repository-code: "https://github.com/LabRAI/HazardWeaver"
+url: "https://arxiv.org/abs/2610.03591"
+license: MIT
+version: 1.0.0
+date-released: 2026-10-02
+preferred-citation:
+  type: article
+  title: "HazardWeaver: Scientific Route Selection for Hazard Analysis Agents"
+  authors:
+    - family-names: Zhu
+      given-names: Wangshu
+    - family-names: Cheng
+      given-names: Xueqi
+    - family-names: Wu
+      given-names: Liang
+    - family-names: Dong
+      given-names: Yushun
+  year: 2026
+  doi: 10.48550/arXiv.2610.03591
+  url: "https://arxiv.org/abs/2610.03591"
