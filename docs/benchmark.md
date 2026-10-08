@@ -33,7 +33,7 @@ Table 1 lists adapted planning agents (Plan-and-Execute, Self-Consistency, Disas
 
 ## Data sources
 
-Instances are built from public hazard datasets (WildfireSpreadTS, FloodCastBench, LHASA, SeisBench, TCBench, NOAA CPC, ExtremeWeatherBench, USGS post-fire and ground-failure products, SFINCS, NOAA Storm Events, etc.). Full rasters and checkpoints are obtained separately; smoke tests use small fixtures (`hwb_*_fixture_v1` taskpacks).
+Instances are built from public hazard datasets (WildfireSpreadTS, FloodCastBench, LHASA, SeisBench, TCBench, NOAA CPC, ExtremeWeatherBench, USGS post-fire and ground-failure products, NOAA Storm Events, etc.). The FL-2 and MH-3 tracks additionally include routes that run the [SFINCS](https://www.deltares.nl/en/software-and-data/products/sfincs) hydrodynamic model developed by Deltares ([manual](https://sfincs.readthedocs.io)); see [DATA_LICENSES.md](../DATA_LICENSES.md). Full rasters and checkpoints are obtained separately; smoke tests use small fixtures (`hwb_*_fixture_v1` taskpacks).
 
 ## Limitations
 
